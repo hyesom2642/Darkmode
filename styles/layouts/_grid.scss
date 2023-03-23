@@ -1,0 +1,35 @@
+/* 
+  * Mobile( < 768px )
+  * Fixture: sm
+  * # of columns: 8
+  * gutter: 8px
+  * margin: 16px
+  * container: 100% - (16px * 2)
+  * unit: (100% - (16px*2)) / 8 - 8px
+*/
+
+$gutter: 8px;
+
+$sm-columns: 8;
+$sm-margin: 16px;
+
+.container {
+  width: 100%;
+  padding: 0 $sm-margin;
+  margin: 0 auto;
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  [class^='col-'] {
+    padding: 0 $gutter / 2;
+  }
+
+  @for $i from 1 through $sm-columns {
+    .col-sm-#{$i} {
+      width: percentage($i / $sm-columns);
+    }
+  }
+}
