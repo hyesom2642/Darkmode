@@ -1,0 +1,39 @@
+.dark-mode {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+  height: 35px;
+  padding: 0 3px 0 15px;
+  border-radius: 39px;
+  background-color: #d9d9d9;
+  color: #000;
+  margin: 0 auto;
+  margin-bottom: 60px;
+
+  span {
+    margin-right: 14px;
+  }
+
+  &-toggle-button {
+    display: block;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: -1px 1px 4px 2px rgba(0, 0, 0, 0.33);
+  }
+
+  &.is-light {
+    // is-light 일 때 innerHTML = 'Light'로
+    padding: 0 15px 0 2px;
+    background-color: #000;
+    color: #fff;
+
+    span {
+      margin-right: 0;
+      margin-left: 14px;
+      order: 2;
+    }
+  }
+}
