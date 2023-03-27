@@ -1,0 +1,24 @@
+.alert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+
+  img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
