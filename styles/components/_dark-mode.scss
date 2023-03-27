@@ -1,10 +1,10 @@
-.dark-mode {
+.dark-button-group {
+  position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 100px;
   height: 35px;
-  padding: 0 3px 0 15px;
+  padding-left: 15px;
   border-radius: 39px;
   background-color: #d9d9d9;
   color: #000;
@@ -15,25 +15,36 @@
     margin-right: 14px;
   }
 
-  &-toggle-button {
+  .toggle-button {
+    position: absolute;
+    top: 3px;
+    right: 3px;
     display: block;
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
+    transform: scale(0.9);
     border-radius: 50%;
     background-color: #fff;
     box-shadow: -1px 1px 4px 2px rgba(0, 0, 0, 0.33);
+    transition: 0.5s;
   }
 
   &.is-light {
-    // is-light 일 때 innerHTML = 'Light'로
-    padding: 0 15px 0 2px;
+    padding-right: 15px;
     background-color: #000;
-    color: #fff;
 
     span {
+      position: absolute;
+      top: 7px;
+      right: 15px;
       margin-right: 0;
-      margin-left: 14px;
-      order: 2;
+      color: #fff;
+    }
+
+    button {
+      .toggle-button {
+        right: (100px - 31px);
+      }
     }
   }
 }
