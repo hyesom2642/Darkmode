@@ -7,6 +7,16 @@
   padding: 0 16px;
   border-top: 1px solid #fff;
 
+  &.is-light {
+    border-top: 1px solid #000;
+
+    .footer-item {
+      button {
+        color: #000;
+      }
+    }
+  }
+
   &-list {
     display: flex;
     align-items: center;
@@ -19,17 +29,20 @@
     margin-right: 50px;
     transition: opacity 0.3s ease-in-out;
 
+    button {
+      color: #fff;
+    }
+
+    i {
+      font-size: 40px;
+    }
+
     &:last-child {
       margin-right: 0;
     }
 
     &:hover {
       opacity: 0.7;
-    }
-
-    i {
-      font-size: 40px;
-      color: #fff;
     }
   }
 }
