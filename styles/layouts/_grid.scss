@@ -23,9 +23,9 @@ $sm-margin: 16px;
     flex-wrap: wrap;
   }
 
-  [class^='col-'] {
-    padding: 0 $gutter / 2;
-  }
+  // [class^='col-'] {
+  //   // padding: 0 $gutter / 2;
+  // }
 
   @for $i from 1 through $sm-columns {
     .col-sm-#{$i} {
