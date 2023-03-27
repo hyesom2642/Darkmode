@@ -5,18 +5,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
-  // font-family: $font-main;
-}
-
-html {
-  // font-family: $font-main;
-  // font-size: $font-size-16;
 }
 
 body {
   background-color: #000;
-  // font-family: $font-main;
-  // color: $primary;
+  transition: all 0.5s ease-in-out;
 }
 
 a {
